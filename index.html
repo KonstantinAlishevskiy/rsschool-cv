@@ -1,47 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<link href="./style.css" rel="stylesheet" type="text/css" />
 		<title>CV</title>
 	</head>
-	<body>
-		<header>
+	<body class="block">
+		<header >
 			<div>
-				<img src="D:\Фото\Египет 2018 год. 30 лет\1\DSCN0312-1.jpg" alt="Photo" height="300" width="230">
+				<img src="./DSCN0312-1.jpg" alt="Photo" height="300" width="230">
 				<h1>Konstantin Alishevskiy</h1>
 			</div>
 		</header>
 		<main>
+			<nav>
+				<a href="#Сontacts">Сontacts</a>
+				<a href="#Information">Information about yourself</a>
+				<a href="#Skills">Skills</a>
+				<a href="#Code">Code</a>
+				<a href="#Work">Work experience</a>
+				<a href="#Education">Education</a>
+				<a href="#English">English language</a>
+			</nav>
 			<section>
-				<h3>Number: </h3> 
-				<p> +375 33 387 22 98</p>
-				<h3>Email:</h3>
-				<p>alishevskykostyaa@gmail.com </p>
+				<h3><a id="Сontacts">Сontacts:</a></h3> 
+				<ul>
+					<li> +375 33 387 22 98</li>
+					<li>alishevskykostyaa@gmail.com</li>
+				</ul>
 			</section>
 			<section>
-				<h3>Information about yourself: </h3>
+				<h3><a id="Information">Information about yourself:</a></h3>
 				<p>I want to become a good developer. I have no experience in the field of development. 
 				I really hope that the courses will help you realize yourself in the field of development.</p>
 			</section>
 			<section>
-				<h3>Skills: </h3>
-				<ol>
+				<h3><a id="Skills">Skills:</a></h3>
+				<ul>
 					<li>HTML</li>
 					<li>CCS</li>
 					<li>Bootstrap</li>
 					<li>Wordpress</li>
-				</ol>
+				</ul>
 			</section>
 			<section>
-				<h3>Work experience: </h3>
+				<h3><a id="Code">Code:</a></h3>
+				<pre><code>function checkParent (src, dest) {
+	while (src != null) {
+		if (src.tagName == dest) return src
+			src = src.parentElement
+	}
+	return null
+}
+				</code></pre>
+			</section>
+			<section>
+				<h3><a id="Work">Work experience:</a></h3>
 				<p>No work experience Junior Dev.</p>
 			</section>
 			<section>
-				<h3>Education: </h3>
+				<h3><a id="Education">Education:</a></h3>
 				<p>Higher education. He is a mathematician and programmer by education.</p>
 			</section>
 			<section>
-				<h3>English language: </h3>
+				<h3><a id="English">English language:</a></h3>
 				<p>English language level A1. I speak English poorly. <p>
 			</section>
 		</main>
